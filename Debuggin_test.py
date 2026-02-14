@@ -1,11 +1,10 @@
-def validar_contraseña(password):
-    """
-    Valida una contraseña según los siguientes criterios:
-    - Mínimo 8 caracteres
-    - No pueden ser solo números
-    - No pueden ser solo letras
-    - No pueden contener espacios
-    """
+# Programa principal
+print("=" * 50)
+print("VALIDADOR DE CONTRASEÑAS")
+print("=" * 50)
+
+while True:
+    password = input("\nIngrese una contraseña: ")
     errores = []
     
     if len(password) < 8:
@@ -19,17 +18,6 @@ def validar_contraseña(password):
     
     if password.isalpha():
         errores.append("❌ La contraseña no puede ser solo letras")
-    
-    return errores
-
-# Programa principal
-print("=" * 50)
-print("VALIDADOR DE CONTRASEÑAS")
-print("=" * 50)
-
-while True:
-    password = input("\nIngrese una contraseña: ")
-    errores = validar_contraseña(password)
 
     if not errores:
         print("\n✅ ¡Contraseña válida! Acceso concedido")
