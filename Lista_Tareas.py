@@ -20,6 +20,7 @@ while True:
         tareas.pop (idx - 1)
         print("Tarea eliminada.")
     elif opcion == "4":
+        print("Saliendo del programa.")
         break
     elif opcion == "5":
         idx = int(input("Ingrese el número de la tarea a marcar como completada: "))
